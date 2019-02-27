@@ -83,8 +83,24 @@ for link in soup.find_all('a'):
 ~~~
 {: .source}
 
+Now, we want to save all of the csv files, but we want to use their file names. To do that, 
+we need to extract the file name from the `testlink` string. If split the `testlink` string we 
+are left with after the for loop is finished running, 
+we'll see that it isn't a link that we can work with.
+~~~
+for link in soup.find_all('a'):
+    testlink = link.get('href')
+    if testlink is not None:
+        if(testlink.find('csv') != -1):
+            keeptestlink = testlink
+            print(testlink)
 
-Save all of the csv files
+testlink.split('/')[-1]
+print('testlink')
+~~~
+{: .source}
+
+So instead, we create a temp variable that will save the last good, i.e. `.csv` link name.
 ~~~
 for link in soup.find_all('a'):
     testlink = link.get('href')
@@ -98,7 +114,22 @@ headerurl = 'https://www.sec.gov'
 print(headerurl+keeptestlink)
 ~~~
 {: .source}
+From this, we can create a header string, then print the two strings concatenated to each other to test if 
+the string is a valid URL.  Remember, 
+we are trying to reconstruct the URLs, so we can save the csv files linked from this page.
+~~~
+for link in soup.find_all('a'):
+    testlink = link.get('href')
+    if testlink is not None:
+        if(testlink.find('csv') != -1):
+            keeptestlink = testlink
+            print(testlink)
+keeptestlink.split('/')[-1]
 
+headerurl = 'https://www.sec.gov'
+print(headerurl+keeptestlink)
+~~~
+{: .source}
 
 Make sure you are a good netizen
 ~~~
