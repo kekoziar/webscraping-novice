@@ -5,11 +5,11 @@ root: .
 ---
 ## Instructional Content
 
-The content in this lesson is
+The content in this lesson has been inspired in part by [The Carpentries][TC].  The content is
 made available under the [Creative Commons Attribution
-license][cc-by-nc-human]. The following is a human-readable summary of
-(and not a substitute for) the [full legal text of the CC BY NC 4.0
-license][cc-by-nc-legal].
+license][cc-by-human]. The following is a human-readable summary of
+(and not a substitute for) the [full legal text of the CC BY 4.0
+license][cc-by-legal].
 
 You are free:
 
@@ -29,7 +29,6 @@ Under the following terms:
   license][cc-by-human], and indicate if changes were made. You may do
   so in any reasonable manner, but not in any way that suggests the
   licensor endorses you or your use.
-* **NonCommercial**---You may not use the material for commercial purposes. 
 
 **No additional restrictions**---You may not apply legal terms or
 technological measures that legally restrict others from doing
@@ -51,8 +50,7 @@ The [lesson template][carpentries-lesson] is copyright © [The Carpentries][TC],
 [CC-BY 4.0][cc-by-human].  Modifications were made to the base template to remove references to 
 The Carpentries, so as to not confuse this lesson with an official Carpentries lesson. 
 
-[cc-by-nc-human]: https://creativecommons.org/licenses/by-nc/4.0/
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
-[cc-by-nc-legal]: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+[cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [carpentries-lesson]: https://github.com/carpentries/styles/
 [TC]: https://carpentries.org/
