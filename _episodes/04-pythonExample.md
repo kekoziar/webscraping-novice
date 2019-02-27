@@ -1,9 +1,9 @@
 ---
-title: "Webscraping with Python"
+title: "Web Scraping with Python"
 teaching: 0
 exercises: 30
 questions:
-- "How do I webscrape with Python?"
+- "How do I web scrape with Python?"
 objectives:
 - "Read an html page with Python"
 - "Parse an html page with Python"
