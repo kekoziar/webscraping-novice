@@ -70,6 +70,14 @@ To avoid the errors, we first need to test the link to make sure it is not empty
 for link in soup.find_all('a'):
     testlink = link.get('href')
     if testlink is not None:
+        print(testlink.find('csv'))
+~~~
+{: .source}
+And, now when we print `testlink.find('csv')`, there are no errors. The `find` function returns either the starting index where the search pattern is located, or a negative 1 to indicate the pattern does not occur in the string.  Now that we understand how the find function works, we can add a few lines to our `for` loop, so it only returns the URL text used in the `href` call.
+~~~
+for link in soup.find_all('a'):
+    testlink = link.get('href')
+    if testlink is not None:
         if(testlink.find('csv') != -1):
             print(testlink)
 ~~~
