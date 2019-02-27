@@ -25,6 +25,11 @@ What can you do with this?
 ~~~
 filename = "SEC_FOIALogs.html"
 file = open(filename, 'wb')
+~~~
+{: .source}
+In Jupyter Notebook you can type a question mark after the function name to open a help menu.  So, viewing the help menu after executing `open?` will show that the `'wb'` in `open(filename, 'wb')` will open a new file that is writable with the name `"SEC_FOIALogs.html"` in binary mode.
+
+~~~
 file.write(webpage.content)
 file.close()
 ~~~
