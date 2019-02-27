@@ -58,6 +58,16 @@ for link in soup.find_all('a'):
 Find all of the links to csv files
 ~~~
 for link in soup.find_all('a'):
+    print(link.get('href').find('csv'))
+~~~
+{: .source}
+Oops. It seems the `.find('csv')` function returns an error.  When we compare it with the earlier list, 
+we'll see that there are some spaces. This indicates that there are some links that do not contain URLs, 
+for whatever reason. 
+
+To avoid the errors, we first need to test the link to make sure it is not empty.  
+~~~
+for link in soup.find_all('a'):
     testlink = link.get('href')
     if testlink is not None:
         if(testlink.find('csv') != -1):
