@@ -26,7 +26,7 @@ kind: "lesson"
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 # Please don't change it: <USERNAME>/<PROJECT> is correct.
-repository: <USERNAME>/<PROJECT>
+repository: kekoziar/webscraping-novice
 
 # Email address, no mailto:
 email: "koziarke@gmail.com"
@@ -99,3 +99,6 @@ exclude:
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
+
+# Social
+analytics-id: "UA-137394704-2"
