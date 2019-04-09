@@ -100,5 +100,5 @@ exclude:
 # Turn on built-in syntax highlighting.
 highlighter: rouge
 
-# Social
-analytics-id: "UA-137394704-2"
+# Google Analytics
+google_analytics: UA-137394704-2
