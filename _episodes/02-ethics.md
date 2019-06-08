@@ -1,6 +1,6 @@
 ---
 title: "Ethics of Web Scraping"
-teaching: 0
+teaching: 10
 exercises: 0
 questions:
 - "When is it okay to web scrape?"
